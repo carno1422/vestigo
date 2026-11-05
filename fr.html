@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Vestigo — votre mémoire personnelle du Web</title>
+<meta name="description" content="Vestigo est une extension Chrome qui garde les pages qui comptent et les retrouve quand vous les décrivez : « le comparatif des ordinateurs AMD vu la semaine dernière ». Tout reste sur votre appareil.">
+<link rel="icon" href="assets/icon-32.png">
+<style>
+:root{--bg:#f6f6f3;--card:#fff;--text:#17171a;--muted:#5f6068;--line:#e4e4df;--accent:#0e7c6b;--accent-soft:#e2f1ed}
+@media (prefers-color-scheme:dark){:root{--bg:#0e0f11;--card:#17181b;--text:#ececef;--muted:#a1a2aa;--line:#2a2b30;--accent:#2db39b;--accent-soft:#14302b}}
+*{box-sizing:border-box}html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--text);font:16px/1.6 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--accent)}
+header{max-width:1040px;margin:0 auto;padding:20px 24px;display:flex;align-items:center;justify-content:space-between;gap:16px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700;letter-spacing:.08em;color:var(--text);text-decoration:none}
+.brand img{width:32px;height:32px}
+nav a{margin-left:18px;color:var(--muted);text-decoration:none;font-size:15px}nav a:hover{color:var(--text)}
+main{max-width:1040px;margin:0 auto;padding:0 24px 64px}
+.hero{padding:48px 0 32px;max-width:720px}
+.hero h1{font-size:clamp(32px,5vw,48px);line-height:1.1;margin:0 0 16px;letter-spacing:-.02em}
+.hero p{font-size:19px;color:var(--muted);margin:0 0 24px}
+.btn{display:inline-block;background:var(--accent);color:#fff;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:600}
+.btn.soon{background:var(--line);color:var(--muted)}
+.shot{width:100%;border-radius:14px;border:1px solid var(--line);box-shadow:0 12px 40px rgba(0,0,0,.08);margin:8px 0 48px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px;margin-bottom:48px}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:20px}
+.card h3{margin:0 0 6px;font-size:17px}.card p{margin:0;color:var(--muted);font-size:15px}
+h2{font-size:26px;margin:0 0 16px;letter-spacing:-.01em}
+.plans .card{display:flex;flex-direction:column;gap:6px}
+.price{font-size:30px;font-weight:700}.price small{font-size:15px;color:var(--muted);font-weight:500}
+.plans ul{margin:8px 0 0;padding-left:18px;color:var(--muted);font-size:15px}
+.note{color:var(--muted);font-size:14px}
+.doc{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:32px clamp(20px,4vw,48px);max-width:820px}
+.doc h1{font-size:30px;line-height:1.2}.doc table{border-collapse:collapse;width:100%;font-size:14px}
+.doc td,.doc th{border:1px solid var(--line);padding:6px 8px;text-align:left;vertical-align:top}
+.doc blockquote{margin:0;padding:8px 16px;background:var(--accent-soft);border-radius:8px}
+footer{border-top:1px solid var(--line);max-width:1040px;margin:0 auto;padding:24px;color:var(--muted);font-size:14px;display:flex;flex-wrap:wrap;gap:18px}
+footer a{color:var(--muted)}
+</style>
+</head>
+<body>
+<header>
+  <a class="brand" href="fr.html"><img src="assets/icon-128.png" alt="">VESTIGO</a>
+  <nav><a href="privacy.html">Confidentialité</a><a href="legal.html">Mentions légales</a><a href="index.html">English</a></nav>
+</header>
+<main>
+<section class="hero">
+  <h1>Retrouvez n’importe quelle page enregistrée, avec vos mots.</h1>
+  <p>Vestigo est une extension Chrome qui garde les pages qui comptent et les retrouve quand vous les décrivez : « le comparatif des ordinateurs AMD vu la semaine dernière ». Tout reste sur votre appareil.</p>
+  <span class="btn soon">Bientôt sur le Chrome Web Store</span>
+</section>
+<img class="shot" src="screenshots/1-tableau-de-bord.png" alt="Tableau de bord de Vestigo" width="1280" height="800">
+<section class="grid"><div class="card"><h3>Enregistrez en un clic</h3><p>Bouton, clic droit ou Alt + Maj + S. Ajoutez une note, des mots-clés et une catégorie.</p></div><div class="card"><h3>Cherchez comme vous vous souvenez</h3><p>Fautes de frappe, synonymes courants et dates (« hier », « la semaine dernière ») sont compris.</p></div><div class="card"><h3>Organisez</h3><p>Catégories en couleur, collections par projet, notes et tableau de bord des pages récentes.</p></div><div class="card"><h3>100 % local</h3><p>Pas de compte, pas de serveur, pas de publicité, pas de pistage. Fonctionne hors ligne. Exportez vos données quand vous voulez.</p></div><div class="card"><h3>Enregistrement automatique facultatif</h3><p>Désactivé par défaut. Ignore la navigation privée, les pages de connexion et de paiement, et les sites exclus.</p></div><div class="card"><h3>12 langues</h3><p>Anglais, chinois, hindi, espagnol, français, arabe, portugais, russe, allemand, japonais, coréen, italien.</p></div></section>
+<section class="plans"><h2>Offres</h2><div class="grid"><div class="card"><h3>Gratuit</h3><div class="price">0 € <small></small></div><ul><li>Jusqu’à 100 pages</li><li>Recherche locale complète</li><li>Catégories, notes, collections</li><li>Export et import JSON</li></ul></div><div class="card"><h3>Premium</h3><div class="price">5 € <small>paiement unique</small></div><ul><li>Jusqu’à 500 pages</li><li>Recherche et filtres avancés</li><li>Tris supplémentaires</li><li>Exports CSV, favoris HTML et Markdown</li></ul></div><div class="card"><h3>Premium+</h3><div class="price">4,99 € <small>/mois</small></div><ul><li>Tout Premium</li><li>Pages illimitées</li><li>Résiliable à tout moment</li></ul></div></div><p class="note">Les offres payantes ne sont pas encore en vente. Prix TTC le cas échéant. Voir les <a href="legal.html#fr">conditions de vente</a>.</p></section>
+</main>
+<footer>
+  <span>© 2026 Vestigo</span>
+  <a href="privacy.html">Confidentialité</a>
+  <a href="legal.html">Mentions légales</a>
+</footer>
+</body>
+</html>
